@@ -10,11 +10,11 @@ import { splitEmojis, returnHTML, getRandomPositiveReaction, getChatIds} from ".
 export default {
     async fetch(request, env, ctx) {
         // Access the bot token and emoji list from environment variables
-        const botToken = env.BOT_TOKEN;
-        const botUsername = env.BOT_USERNAME;
-        const Reactions = splitEmojis(env.EMOJI_LIST);
+        const botToken = "7790854802:AAF5LntKXYcB5uPIZFgJQCVmoB6VHVaEBCg
+        const botUsername = "@Autoreactcpbot"
+        const Reactions = "👍❤🔥🥰👏😁🎉🤩🙏👌🕊😍🐳❤‍🔥💯⚡🏆"
         const RestrictedChats = getChatIds(env.RESTRICTED_CHATS);
-        const RandomLevel = parseInt(env.RANDOM_LEVEL || '0', 10);
+        const RandomLevel = "200"
 
         const botApi = new TelegramBotAPI(botToken);
 
