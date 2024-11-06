@@ -10,7 +10,7 @@ import { splitEmojis, returnHTML, getRandomPositiveReaction, getChatIds} from ".
 export default {
     async fetch(request, env, ctx) {
         // Access the bot token and emoji list from environment variables
-        const botToken = "7790854802:AAF5LntKXYcB5uPIZFgJQCVmoB6VHVaEBCg
+        const botToken = "7790854802:AAF5LntKXYcB5uPIZFgJQCVmoB6VHVaEBCg"
         const botUsername = "@Autoreactcpbot"
         const Reactions = "👍❤🔥🥰👏😁🎉🤩🙏👌🕊😍🐳❤‍🔥💯⚡🏆"
         const RestrictedChats = getChatIds(env.RESTRICTED_CHATS);
