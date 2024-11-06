@@ -15,11 +15,11 @@ dotenv.config();
 const app = express();
 app.use(bodyParser.json());
 
-const botToken = process.env.BOT_TOKEN;
-const botUsername = process.env.BOT_USERNAME;
-const Reactions = splitEmojis(process.env.EMOJI_LIST);
-const RestrictedChats = getChatIds(process.env.RESTRICTED_CHATS);
-const RandomLevel = parseInt(process.env.RANDOM_LEVEL || '0', 10);
+const botToken = "7790854802:AAF5LntKXYcB5uPIZFgJQCVmoB6VHVaEBCg" 
+const botUsername = "@Autoreactcpbot"
+const Reactions = "👍❤🔥🥰👏😁🎉🤩🙏👌🕊😍🐳❤‍🔥💯⚡🏆"
+const RestrictedChats = getChatIds(env.RESTRICTED_CHATS);
+const RandomLevel = "200"
 
 const botApi = new TelegramBotAPI(botToken);
 
